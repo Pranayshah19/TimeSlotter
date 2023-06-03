@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Cleaning Appointment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('3.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .container {
+      max-width: 400px;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+      display: none; 
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #666;
+    }
+    
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+    }
+    
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    
+    .confirmation-page {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: none; 
+    }
+    
+    .tick-mark {
+      font-size: 80px;
+      color: #fff; 
+      margin-bottom: 20px;
+    }
+    
+    .message {
+      font-size: 24px;
+      color: #fff;
+    }
+    
+    
+    #confirmation-message:before {
+      content: '';
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- <h2>Room Cleaning Appointment</h2> Remove the title -->
+    <form id="booking-form">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+      
+      <input type="submit" value="Book">
+    </form>
+  </div>
+
+  <div id="confirmation-page" class="confirmation-page">
+    <div class="tick-mark">&#10004;</div>
+    <div id="confirmation-message" class="message"></div>
+  </div>
+
+  <script>
+    document.getElementById("booking-form").addEventListener("submit", function(e) {
+      e.preventDefault(); 
+      
+      var date = document.getElementById("date").value;
+      var time = document.getElementById("time").value;
+      
+      
+      console.log("Selected Date:", date);
+      console.log("Selected Time:", time);
+      
+      
+      var confirmationMessage = `Your booking is done for ${date} at ${time}`;
+      document.getElementById("confirmation-message").textContent = confirmationMessage;
+      
+      
+      document.getElementById("booking-form").style.display = "none";
+      document.getElementById("confirmation-page").style.display = "flex";
+    });
+  </script>
+</body>
+</html>

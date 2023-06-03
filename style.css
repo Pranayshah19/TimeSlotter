@@ -1,0 +1,200 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Set default font and background */
+body {
+    background-image: url('3.jpg');
+
+    font-family: 'poppins', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+header {
+    background-color:;
+    padding: 20px;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: absolute;
+    top: 0;
+    width: 100;
+    padding: 20px 7%;
+
+    
+
+}
+
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+#hero {
+    background-image: url('.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* About section styles */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+/* Services section styles */
+#services {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+}
+
+.container ul {
+    list-style: disc;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.container input,
+.container textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+/* style.css */
+
+/* Rest of your CSS styles */
+
+/* Services Section */
+#services {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#services .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+#services .service {
+    text-align: center;
+}
+
+#services .service img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#services .service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#services .service p {
+    font-size: 16px;
+}

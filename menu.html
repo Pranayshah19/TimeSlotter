@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('4.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+   
+    
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    
+    .menu-item {
+      flex-basis: 23%;
+      text-align: center;
+      padding: 20px;
+      background-color: #e0ebeb;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+    
+    .menu-item:last-child {
+      margin-right: 0;
+    }
+    
+    .menu-item a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+    }
+    
+    .search-container {
+      text-align: right;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    
+    .search-container input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    .image {
+      width: 150px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="menu">
+      <div class="menu-item">
+        <a href="4.html">
+          <img class="image" src="barber.jpg" alt="Image 1">
+          <div>Haircut</div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#">
+          <img class="image" src="clinic.jpg" alt="Image 2">
+          <div>Healthcare</div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#">
+          <img class="image" src="parlour.jpg" alt="Image 3">
+          <div>Parlour</div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#">
+          <img class="image" src="tabel.jpg" alt="Image 4">
+          <div>Table at Restaurant</div>
+        </a>
+      </div>
+      <div class="menu-item">
+        <a href="#">
+          <img class="image" src="other.jpg" alt="Image 5">
+          <div>Others</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
